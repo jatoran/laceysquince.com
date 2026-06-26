@@ -4,8 +4,8 @@
 (function () {
   "use strict";
 
-  /* ---- target date: Sat Nov 28 2026, 5:00 PM Central (CST = UTC-6) ---- */
-  var TARGET = new Date("2026-11-28T17:00:00-06:00").getTime();
+  /* ---- target date: Sat Nov 21 2026, Central (CST = UTC-6); time TBA → counts to start of day ---- */
+  var TARGET = new Date("2026-11-21T00:00:00-06:00").getTime();
 
   /* =====================================================
      HEADER scroll state + active link
