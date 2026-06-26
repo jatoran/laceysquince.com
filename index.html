@@ -3,25 +3,148 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>laceysquince.com</title>
-  <style>
-    html, body { height: 100%; margin: 0; }
-    body {
-      display: grid;
-      place-items: center;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      background: #0f0f12;
-      color: #f4f4f5;
-    }
-    main { text-align: center; padding: 2rem; }
-    h1 { font-size: clamp(2rem, 6vw, 4rem); margin: 0 0 0.5rem; letter-spacing: -0.02em; }
-    p { color: #a1a1aa; margin: 0; }
-  </style>
+  <title>Lacey's Quinceañera · November 28, 2026</title>
+  <meta name="description" content="You're invited to celebrate Lacey's Quinceañera — Saturday, November 28, 2026.">
+  <meta property="og:title" content="Lacey's Quinceañera">
+  <meta property="og:description" content="You're invited to celebrate — Saturday, November 28, 2026.">
+  <meta property="og:image" content="assets/hero/lacey.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav">
+      <a href="#home" class="brand">Lacey</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#story">My Story</a></li>
+        <li><a href="#favorites">My Favorites</a></li>
+        <li><a href="#party">My Party</a></li>
+        <li><a href="#album">Photo Album</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
-    <h1>laceysquince.com</h1>
-    <p>Coming soon.</p>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <p class="eyebrow">You're invited to celebrate the</p>
+        <h2 class="script hero-quince">Quinceañera</h2>
+        <p class="hero-of">of</p>
+
+        <div class="portrait-wrap">
+          <span class="sparkle s1" aria-hidden="true">✦</span>
+          <span class="sparkle s2" aria-hidden="true">✦</span>
+          <span class="sparkle s3" aria-hidden="true">✧</span>
+          <div class="portrait-ring">
+            <img src="assets/hero/lacey.jpg" alt="Lacey wearing her rose-pink quinceañera crown" width="1500" height="1990">
+          </div>
+        </div>
+
+        <h1 class="script hero-name">Lacey</h1>
+        <div class="divider"><span>✦</span></div>
+        <p class="hero-date">Saturday &middot; November 28, 2026 &middot; 5:00 PM</p>
+
+        <div class="countdown" id="countdown" aria-label="Countdown to the celebration">
+          <div class="cd-unit"><span class="cd-num" data-days>00</span><span class="cd-label">Days</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" data-hours>00</span><span class="cd-label">Hours</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" data-minutes>00</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" data-seconds>00</span><span class="cd-label">Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MY STORY ===== -->
+    <section id="story" class="section section-cream">
+      <div class="container reveal">
+        <p class="eyebrow">welcome</p>
+        <h2 class="script section-title">My Story</h2>
+        <div class="divider"><span>✦</span></div>
+        <p class="story-text">
+          Hi, my name is Lacey and I'm really excited about my quince. I've been dreaming about
+          this day since I was a little girl. I've grown up watching all my cousins having quinces &mdash;
+          now it's my turn. A little about myself: I went to River Oaks Elementary, and I recently
+          graduated from 8th grade at Kelly Lane Middle School. I am now headed for Connally High School
+          in the Fall. I love playing volleyball. In the future I either want to be a marine biologist
+          or a zoo biologist. Thanks for sharing my experience with me.
+        </p>
+        <p class="story-sign script">&mdash; Lacey</p>
+      </div>
+    </section>
+
+    <!-- ===== MY FAVORITES ===== -->
+    <section id="favorites" class="section section-blush">
+      <div class="container reveal">
+        <p class="eyebrow">a few of my</p>
+        <h2 class="script section-title">My Favorites</h2>
+        <div class="divider"><span>✦</span></div>
+        <ul class="fav-grid" id="favGrid"><!-- populated by script.js --></ul>
+      </div>
+    </section>
+
+    <!-- ===== MY PARTY ===== -->
+    <section id="party" class="section section-cream">
+      <div class="container reveal">
+        <p class="eyebrow">save the date for</p>
+        <h2 class="script section-title">My Party</h2>
+        <div class="divider"><span>✦</span></div>
+
+        <div class="party-card">
+          <div class="party-month">November</div>
+          <div class="party-day">28</div>
+          <div class="party-year">2026</div>
+          <div class="party-meta">
+            <p class="party-weekday">Saturday Evening &middot; 5:00 PM</p>
+            <p class="party-note">Join us for an evening of family, music, and dancing as I celebrate this special milestone.</p>
+            <p class="party-venue">Venue &amp; details to follow &mdash; check back soon.</p>
+          </div>
+        </div>
+
+        <div class="party-mini-countdown" id="partyCountdown" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ===== PHOTO ALBUM ===== -->
+    <section id="album" class="section section-blush">
+      <div class="container reveal">
+        <p class="eyebrow">moments &amp; memories</p>
+        <h2 class="script section-title">Photo Album</h2>
+        <div class="divider"><span>✦</span></div>
+        <div class="gallery" id="gallery" aria-label="Photo gallery"><!-- populated by script.js --></div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <p class="script footer-name">Lacey</p>
+    <p class="footer-sub">Mis Quince Años &middot; November 28, 2026</p>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#10094;</button>
+    <figure class="lb-figure">
+      <img class="lb-img" id="lbImg" alt="">
+      <figcaption class="lb-caption" id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -36,3 +36,12 @@ out/
 # === JetBrains IDEs ===
 .idea/
 *.iml
+
+# === Project trash ===
+.trash/
+
+# === Raw photo originals (NOT published) ===
+# Optimized, web-ready copies live in assets/gallery/ and assets/hero/ and ARE committed.
+# These source folders (~138MB of full-res originals) stay local only.
+/assets/Lacey_s Photo Album/
+/assets/Lacey_s quince/
